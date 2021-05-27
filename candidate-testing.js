@@ -21,7 +21,7 @@ function askForName() {
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-question = input.question ("Who was the first American woman in space?");
+candidateAnswer = input.question ("Who was the first American woman in space?");
 
 }
 
@@ -31,7 +31,14 @@ function gradeQuiz(candidateAnswers) {
 
 
   let grade;
-  
+  //console.log (candidateAnswer);//
+  //console.log (correctAnswer);//
+if (candidateAnswer === correctAnswer){
+  grade = "Pass";
+
+}else {
+  grade = "Fail";
+}
 
   return grade;
 }
@@ -41,7 +48,7 @@ function runProgram() {
   // TODO 1.1c: Ask for candidate's name //
   console.log('Hello, '  + candidateName);
   askQuestion();
-  gradeQuiz(this.candidateAnswers);
+  console.log (gradeQuiz(this.candidateAnswers));
 }
 
 // Don't write any code below this line //
