@@ -75,7 +75,7 @@ console.log('>>>Status: PASSED <<<')
 }else{
   console.log('>>>Status: FAILED <<<')
 }
-
+  return overallGrade;
 }
 
 function runProgram() {
