@@ -8,7 +8,7 @@ let candidateName = "";
 let question = "Who was the first American woman in space? ";
 let correctAnswer = "Sally Ride";
 let candidateAnswer = "";
-let questions = ['Who was the first American woman in space? ', 'True or false: 5 kilometer == 5000 meters? ', '(5 + 3)/2 * 10 = ? ', 'Given the array [8, "Orbit", "Trajectory", 45], what entry is at index 2? ', 'What is the minimum crew size for the ISS? '];
+let questions = ['Who was the first American woman in space? ', 'True or false: 5 kilometer == 5000 meters? ', '(5 + 3)/2 * 10 = ? ' , 'Given the array [8, "Orbit", "Trajectory", 45], what entry is at index 2? ' , 'What is the minimum crew size for the ISS? '];
 let correctAnswers = ['Sally Ride', 'true', '40', 'Trajectory', '3'];
 let candidateAnswers = [];
 
@@ -25,9 +25,6 @@ function askQuestion() {
 for (let i = 0; i < questions.length; i++) {
 
  candidateAnswer = input.question (questions[i]);
- console.log(`Your Answer: ${candidateAnswer}`);
-    console.log(`Correct Answer: ${correctAnswers[i]}`);
-    console.log('');
  candidateAnswers.push(candidateAnswer);
  //console.log(candidateAnswers); //
 }
@@ -47,19 +44,18 @@ console.log('');
   for (let i = 0; i < candidateAnswers.length; i++) {
 
   if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()){
-  //console.log(`questions.indexOf(i)) questions[i]`);
-   // console.log(`Your Answer: ${candidateAnswers[i]}`);
-    //console.log(`Correct Answer: ${correctAnswers[i]}`);
-    //console.log('');
+  console.log(`questions.indexOf(i)) questions[i]`);
+    console.log(`Your Answer: ${candidateAnswers[i]}`);
+    console.log(`Correct Answer: ${correctAnswers[i]}`);
+    console.log('');
   grade++ ;
 
-}
-//else {
-// console.log(questions[i]);
-//    console.log(`Your Answer: ${candidateAnswers[i]}`);
-//    console.log(`Correct Answer: ${correctAnswers[i]}`);
-//    console.log('');
-//}  
+}else {
+ console.log(questions[i]);
+    console.log(`Your Answer: ${candidateAnswers[i]}`);
+    console.log(`Correct Answer: ${correctAnswers[i]}`);
+    console.log('');
+}  
   }
 
   //console.log (candidateAnswer);//
