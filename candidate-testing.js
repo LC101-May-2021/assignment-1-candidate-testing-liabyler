@@ -25,6 +25,9 @@ function askQuestion() {
 for (let i = 0; i < questions.length; i++) {
 
  candidateAnswer = input.question (questions[i]);
+ console.log(`Your Answer: ${candidateAnswer}`);
+    console.log(`Correct Answer: ${correctAnswers[i]}`);
+    console.log('');
  candidateAnswers.push(candidateAnswer);
  //console.log(candidateAnswers); //
 }
@@ -44,18 +47,19 @@ console.log('');
   for (let i = 0; i < candidateAnswers.length; i++) {
 
   if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()){
-  console.log(`questions.indexOf(i)) questions[i]`);
-    console.log(`Your Answer: ${candidateAnswers[i]}`);
-    console.log(`Correct Answer: ${correctAnswers[i]}`);
-    console.log('');
+  //console.log(`questions.indexOf(i)) questions[i]`);
+   // console.log(`Your Answer: ${candidateAnswers[i]}`);
+    //console.log(`Correct Answer: ${correctAnswers[i]}`);
+    //console.log('');
   grade++ ;
 
-}else {
- console.log(questions[i]);
-    console.log(`Your Answer: ${candidateAnswers[i]}`);
-    console.log(`Correct Answer: ${correctAnswers[i]}`);
-    console.log('');
-}  
+}
+//else {
+// console.log(questions[i]);
+//    console.log(`Your Answer: ${candidateAnswers[i]}`);
+//    console.log(`Correct Answer: ${correctAnswers[i]}`);
+//    console.log('');
+//}  
   }
 
   //console.log (candidateAnswer);//
